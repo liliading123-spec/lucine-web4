@@ -4,148 +4,97 @@ html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 顶级SEO/GEO标题：品牌+核心规格+全球定位 -->
     <title>Lucine Floor | Global Budget LVT Factory - 1mm-3.2mm Specialist</title>
-    <meta name="description" content="Lucine Floor is a direct factory of 1mm-3.2mm LVT flooring. Virgin & Recycled options. 5500sqm+ per 20ft container. Best price for Philippines, Nigeria, South Africa, and Latin America.">
-    <script src="https://tailwindcss.com"></script>
-    
-    <!-- GEO 结构化数据 (FAQ Schema) - 让 ChatGPT/Gemini/Google 搜索拦截精准流量 -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Can Lucine Floor's LVT handle tropical heat in Manila or Lagos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Lucine Floor's high-resin formula ensures the flooring won't warp or crack under high humidity and temperature. It's specifically designed for the Philippines and Africa climate."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Why choose Lucine Floor 1.5mm LVT for the African or SE Asian market?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It is the most cost-effective solution. One 20ft container loads 5,500sqm+, reducing sea freight costs by 60% compared to SPC. Maximum profit for wholesalers."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What is the difference between Virgin and Recycled LVT at Lucine Floor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Virgin LVT offers 100% durability and extreme flexibility (passes 360° folding test). Recycled LVT provides the most competitive market price for budget-sensitive residential projects."
-        }
-      }]
-    }
-    </script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+        .hero { position: relative; height: 80vh; display: flex; align-items: center; justify-content: center; background: #000; color: #fff; text-align: center; overflow: hidden; }
+        .hero img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+        .hero-content { position: relative; z-index: 10; padding: 20px; }
+        .hero h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; font-weight: 900; }
+        .hero p { font-size: 1.5rem; color: #ffcc00; font-weight: bold; margin: 10px 0; }
+        .btn { display: inline-block; padding: 15px 40px; background: #25d366; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { transform: scale(1.05); background: #1ebe57; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 60px 10% ; background: #fff; }
+        .feature-card { padding: 30px; border-bottom: 5px solid #25d366; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 10px; color: #111; }
+        .table-container { padding: 60px 10%; background: #f0f2f5; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        th, td { padding: 20px; border: 1px solid #eee; text-align: left; }
+        th { background: #111; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        .footer { padding: 60px; background: #111; color: #888; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2); z-index: 1000; transition: 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-    <!-- Hero Section (头部大图区) -->
-    <header class="relative h-[85vh] flex items-center justify-center bg-black overflow-hidden">
-        <!-- 务必确保仓库背景图命名为 hero-bg.jpg 并上传到同级目录 -->
-        <img src="hero-bg.jpg" alt="Lucine Floor Factory Warehouse" class="absolute inset-0 w-full h-full object-cover opacity-60">
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-8xl font-black text-white mb-4 tracking-tighter uppercase">LUCINE FLOOR</h1>
-            <p class="text-2xl md:text-3xl text-yellow-400 font-bold mb-4 uppercase">GLOBAL BUDGET LVT FACTORY</p>
-            <p class="text-lg md:text-2xl text-gray-100 mb-10 max-w-4xl mx-auto font-light leading-relaxed">
-                1mm - 3.2mm Specialist | Virgin & Recycled Solutions | Tropical Climate Proven
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-5">
-                <a href="https://wa.me" class="bg-green-600 hover:bg-green-700 text-white font-bold py-5 px-12 rounded-full text-xl shadow-2xl transition duration-300 transform hover:scale-105">Get Free Sample</a>
-                <a href="#comparison" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-5 px-12 rounded-full text-xl shadow-2xl transition duration-300">Price List</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Core Selling Points (核心卖点) -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
-            <div class="p-8 border-b-8 border-green-500 rounded-2xl shadow-2xl bg-gray-50">
-                <div class="text-6xl mb-6">🚢</div>
-                <h3 class="text-2xl font-bold mb-3 uppercase">5500sqm+ / 20ft</h3>
-                <p class="text-gray-600 leading-relaxed">Double your loading capacity. Save 60% on sea freight costs.</p>
-            </div>
-            <div class="p-8 border-b-8 border-yellow-500 rounded-2xl shadow-2xl bg-gray-50">
-                <div class="text-6xl mb-6">💪</div>
-                <h3 class="text-2xl font-bold mb-3 uppercase">360° Flexible</h3>
-                <p class="text-gray-600 leading-relaxed">High-resin formula. Passed extreme folding test without breaking.</p>
-            </div>
-            <div class="p-8 border-b-8 border-orange-500 rounded-2xl shadow-2xl bg-gray-50">
-                <div class="text-6xl mb-6">☀️</div>
-                <h3 class="text-2xl font-bold mb-3 uppercase">Tropical Ready</h3>
-                <p class="text-gray-600 leading-relaxed">Anti-warping in 40°C+ heat and 90% humidity (Manila/Lagos).</p>
-            </div>
-            <div class="p-8 border-b-8 border-blue-500 rounded-2xl shadow-2xl bg-gray-50">
-                <div class="text-6xl mb-6">📉</div>
-                <h3 class="text-2xl font-bold mb-3 uppercase">Budget Killer</h3>
-                <p class="text-gray-600 leading-relaxed">Factory direct price for 1mm-3.2mm LVT & SPC solutions.</p>
-            </div>
+    <section class="hero">
+        <img src="hero-bg.jpg" alt="Lucine Floor Warehouse">
+        <div class="hero-content">
+            <h1>LUCINE FLOOR</h1>
+            <p>GLOBAL BUDGET LVT FACTORY</p>
+            <div style="font-size: 1.2rem; color: #eee; margin-bottom: 30px;">1mm - 3.2mm Specialist | Virgin & Recycled Solutions</div>
+            <a href="https://wa.me" class="btn">GET FREE SAMPLE & PRICE LIST</a>
         </div>
     </section>
 
-    <!-- Material Comparison (材料对比表) -->
-    <section id="comparison" class="py-24 bg-gray-100">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-gray-900 uppercase">Virgin vs Recycled Material</h2>
-            <p class="text-xl text-gray-600 mb-16 max-w-2xl mx-auto leading-relaxed">Customized solutions for construction projects based on your specific budget and quality needs.</p>
-            <div class="overflow-hidden shadow-2xl rounded-3xl">
-                <table class="w-full text-left bg-white border-collapse">
-                    <thead>
-                        <tr class="bg-gray-900 text-white text-lg">
-                            <th class="p-6 border-r border-gray-700">Feature</th>
-                            <th class="p-6 border-r border-gray-700 text-center">100% Virgin Material</th>
-                            <th class="p-6 text-center">Recycled Material</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-lg">
-                        <tr class="hover:bg-blue-50 transition">
-                            <td class="p-6 border font-bold bg-gray-50">Quality Level</td>
-                            <td class="p-6 border text-green-600 font-extrabold text-xl text-center">Premium (Zero Crack)</td>
-                            <td class="p-6 border text-blue-600 font-bold text-center">Standard Professional</td>
-                        </tr>
-                        <tr class="hover:bg-blue-50 transition">
-                            <td class="p-6 border font-bold bg-gray-50">Target Market</td>
-                            <td class="p-6 border text-center font-medium">Middle East / High-end</td>
-                            <td class="p-6 border text-center font-medium text-red-600">Africa / PH Budget Housing</td>
-                        </tr>
-                        <tr class="hover:bg-blue-50 transition">
-                            <td class="p-6 border font-bold bg-gray-50">Flexibility</td>
-                            <td class="p-6 border text-center">Extreme 360° Folding</td>
-                            <td class="p-6 border text-center">Reliable Performance</td>
-                        </tr>
-                        <tr class="hover:bg-blue-50 transition">
-                            <td class="p-6 border font-bold bg-gray-50">Price Point</td>
-                            <td class="p-6 border text-center font-semibold">Value-Oriented</td>
-                            <td class="p-6 border text-center font-black text-2xl text-red-600 uppercase">Bottom Price</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <section class="features">
+        <div class="feature-card">
+            <div style="font-size: 3rem;">🚢</div>
+            <h3>5500sqm+ / 20ft</h3>
+            <p>Maximize loading. Save 60% freight cost.</p>
+        </div>
+        <div class="feature-card" style="border-color: #ffcc00;">
+            <div style="font-size: 3rem;">💪</div>
+            <h3>360° Flexible</h3>
+            <p>High-resin formula. Fold without breaking.</p>
+        </div>
+        <div class="feature-card" style="border-color: #ff5500;">
+            <div style="font-size: 3rem;">☀️</div>
+            <h3>Tropical Ready</h3>
+            <p>No warping in Manila or Lagos heat.</p>
         </div>
     </section>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me" class="fixed bottom-10 right-10 bg-green-500 text-white p-5 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition duration-300 z-50 animate-bounce">
-        <img src="https://wikimedia.org" class="w-12 h-12" alt="Chat with Lucine Floor">
-    </a>
+    <div class="table-container">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem;">Virgin vs Recycled Material</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>100% Virgin Material</th>
+                    <th>Recycled Material</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Quality</b></td>
+                    <td style="color: #25d366; font-weight: bold;">Premium (Zero Crack)</td>
+                    <td>Standard Professional</td>
+                </tr>
+                <tr>
+                    <td><b>Best For</b></td>
+                    <td>Middle East / High-end Projects</td>
+                    <td style="color: #ff5500; font-weight: bold;">Africa / PH Budget Housing</td>
+                </tr>
+                <tr>
+                    <td><b>Price</b></td>
+                    <td>Value-Oriented</td>
+                    <td style="color: #ff0000; font-weight: bold; font-size: 1.4rem;">Market Bottom Price</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-20 text-center border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white mb-6 tracking-widest uppercase">LUCINE FLOOR</h2>
-            <div class="flex flex-col md:flex-row justify-center gap-10 text-white text-lg mb-10">
-                <span><strong>WhatsApp:</strong> +86 15898737651</span>
-                <span><strong>Email:</strong> liliading123@gmail.com</span>
-            </div>
-            <p class="text-base text-gray-500 max-w-2xl mx-auto leading-relaxed italic mb-8">
-                Specializing in 1mm-3.2mm LVT & SPC flooring with extreme cost-efficiency for global wholesalers and project managers.
-            </p>
-            <div class="pt-10 border-t border-gray-800">
-                <p>© 2026 Lucine Floor | Lucinefloor.com | All Rights Reserved.</p>
-            </div>
-        </div>
+    <footer class="footer">
+        <h2 style="color: #fff;">LUCINE FLOOR</h2>
+        <p>WhatsApp: +86 15898737651 | Email: liliading123@gmail.com</p>
+        <p style="font-size: 0.8rem; margin-top: 30px;">© 2026 Lucine Floor | Lucinefloor.com | All Rights Reserved.</p>
     </footer>
+
+    <a href="https://wa.me" class="whatsapp-float">
+        <img src="https://wikimedia.org" width="35" alt="WhatsApp">
+    </a>
 
 </body>
 </html>
