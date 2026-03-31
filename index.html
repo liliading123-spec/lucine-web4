@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +11,25 @@ html
         .hero-overlay { position: relative; z-index: 10; padding-bottom: 60px; text-align: center; }
         .cta-btn { display: inline-block; padding: 18px 50px; background: #25d366; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.3); text-transform: uppercase; }
         .cta-btn:hover { transform: scale(1.05); background: #1ebe57; }
+        
         .grid-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 80px 10%; background: #fff; }
         .card { padding: 40px; border-top: 6px solid #25d366; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.06); text-align: center; }
         .card-icon { font-size: 3.5rem; margin-bottom: 15px; }
         .card h3 { font-size: 1.6rem; margin: 0 0 10px; color: #111; text-transform: uppercase; }
+
+        /* 视频板块 - 响应式双列布局 */
+        .video-section { text-align: center; padding: 60px 10%; background: #fff; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 30px; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
         .table-wrap { padding: 60px 10%; background: #f8f9fa; }
         table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
         th, td { padding: 20px; border: 1px solid #eee; text-align: left; }
         th { background: #111; color: #fff; text-transform: uppercase; }
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(37,211,102,0.3); z-index: 1000; }
+        
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(37,211,102,0.3); z-index: 1000; transition: 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
@@ -28,7 +37,6 @@ html
     <header class="hero">
         <img src="hero-bg.jpg" alt="Lucine Floor Factory">
         <div class="hero-overlay">
-            <!-- 删除了重叠的文字，只保留引导按钮，让它和图片里的字形成整体 -->
             <a href="https://wa.me" class="cta-btn">INQUIRY FOR PRICE LIST</a>
         </div>
     </header>
@@ -50,17 +58,35 @@ html
             <p>No warping in Manila or Lagos heat.</p>
         </div>
     </section>
-<section class="video-section" style="text-align: center; padding: 50px 10%;">
-    <h2 style="margin-bottom: 20px;">观看我们的视频</h2>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/cmKXRVAUVpo?si=w8GWCMpQsY624ugQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-            src="https://youtube.com" 
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
+
+    <!-- 视频展示板块 -->
+    <section class="video-section">
+        <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #111;">Factory & Product Show</h2>
+        <p style="color: #666; margin-bottom: 40px;">See our manufacturing excellence and quality testing.</p>
+        
+        <div class="video-grid">
+            <!-- 视频 1 -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/cmKXRVAUVpo?si=w8GWCMpQsY624ugQ" 
+                    title="Lucine Floor Production" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <!-- 视频 2 -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/-2WttF2YK8k?si=_jdkdmtscmgYhE1i" 
+                    title="Lucine Floor Quality Test" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <div class="table-wrap">
         <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem;">Virgin vs Recycled Material</h2>
         <table>
@@ -97,7 +123,8 @@ html
         <p style="font-size: 0.8rem; margin-top: 30px;">© 2026 Lucine Floor | Lucinefloor.com</p>
     </footer>
 
-    <a href="https://wa.me" class="whatsapp-float">
+    <!-- 右下角 WhatsApp 浮窗按钮 -->
+    <a href="https://wa.me" class="whatsapp-float" target="_blank">
         <img src="https://wikimedia.org" width="35" alt="WhatsApp">
     </a>
 
