@@ -6,58 +6,58 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucine Floor | Global Budget LVT Factory - 1mm-3.2mm Specialist</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        .hero { position: relative; height: 80vh; display: flex; align-items: center; justify-content: center; background: #000; color: #fff; text-align: center; overflow: hidden; }
-        .hero img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
-        .hero-content { position: relative; z-index: 10; padding: 20px; }
-        .hero h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; font-weight: 900; }
-        .hero p { font-size: 1.5rem; color: #ffcc00; font-weight: bold; margin: 10px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #25d366; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { transform: scale(1.05); background: #1ebe57; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 60px 10% ; background: #fff; }
-        .feature-card { padding: 30px; border-bottom: 5px solid #25d366; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
-        .feature-card h3 { font-size: 1.5rem; margin-bottom: 10px; color: #111; }
-        .table-container { padding: 60px 10%; background: #f0f2f5; }
-        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
-        th, td { padding: 20px; border: 1px solid #eee; text-align: left; }
-        th { background: #111; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .footer { padding: 60px; background: #111; color: #888; text-align: center; }
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2); z-index: 1000; transition: 0.3s; }
-        .whatsapp-float:hover { transform: scale(1.1); }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #fff; color: #1a1a1a; line-height: 1.6; }
+        .hero { position: relative; height: 75vh; background: #000; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
+        .hero img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+        .hero-overlay { position: relative; z-index: 10; padding: 40px; text-align: center; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); width: 100%; }
+        .hero h1 { color: #fff; font-size: 3.5rem; margin: 0; text-transform: uppercase; font-weight: 900; }
+        .hero p { color: #ffcc00; font-size: 1.5rem; font-weight: bold; margin: 5px 0 20px; }
+        .cta-btn { display: inline-block; padding: 18px 45px; background: #25d366; color: #fff; text-decoration: none; border-radius: 50px; font-weight: 900; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 10px 20px rgba(37,211,102,0.3); }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(37,211,102,0.4); }
+        .grid-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 80px 10%; background: #fff; }
+        .card { padding: 40px; border-top: 6px solid #25d366; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.06); text-align: center; }
+        .card-icon { font-size: 4rem; margin-bottom: 20px; }
+        .card h3 { font-size: 1.8rem; margin: 0 0 10px; color: #000; }
+        .table-wrap { padding: 60px 10%; background: #f4f7f6; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 20px; overflow: hidden; }
+        th, td { padding: 25px; border-bottom: 1px solid #eee; text-align: left; font-size: 1.1rem; }
+        th { background: #111; color: #fff; }
+        .footer { padding: 80px 20px; background: #111; color: #666; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 40px; right: 40px; width: 70px; height: 70px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 40px rgba(37,211,102,0.4); z-index: 9999; }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <img src="hero-bg.jpg" alt="Lucine Floor Warehouse">
-        <div class="hero-content">
+    <header class="hero">
+        <img src="hero-bg.jpg" alt="Lucine Floor Factory">
+        <div class="hero-overlay">
+            <!-- 关键修改：如果图片自带字，我们这里只保留核心品牌和按钮，防止重叠 -->
             <h1>LUCINE FLOOR</h1>
-            <p>GLOBAL BUDGET LVT FACTORY</p>
-            <div style="font-size: 1.2rem; color: #eee; margin-bottom: 30px;">1mm - 3.2mm Specialist | Virgin & Recycled Solutions</div>
-            <a href="https://wa.me" class="btn">GET FREE SAMPLE & PRICE LIST</a>
+            <p>Direct Factory | 1mm - 3.2mm Specialist</p>
+            <a href="https://wa.me" class="cta-btn">INQUIRY FOR PRICE LIST</a>
         </div>
-    </section>
+    </header>
 
-    <section class="features">
-        <div class="feature-card">
-            <div style="font-size: 3rem;">🚢</div>
+    <section class="grid-section">
+        <div class="card">
+            <div class="card-icon">🚢</div>
             <h3>5500sqm+ / 20ft</h3>
-            <p>Maximize loading. Save 60% freight cost.</p>
+            <p>Maximum loading efficiency. Save 60% on sea freight costs.</p>
         </div>
-        <div class="feature-card" style="border-color: #ffcc00;">
-            <div style="font-size: 3rem;">💪</div>
+        <div class="card" style="border-color: #ffcc00;">
+            <div class="card-icon">💪</div>
             <h3>360° Flexible</h3>
-            <p>High-resin formula. Fold without breaking.</p>
+            <p>100% Virgin material formula. Fold without any cracking.</p>
         </div>
-        <div class="feature-card" style="border-color: #ff5500;">
-            <div style="font-size: 3rem;">☀️</div>
+        <div class="card" style="border-color: #ff5500;">
+            <div class="card-icon">☀️</div>
             <h3>Tropical Ready</h3>
-            <p>No warping in Manila or Lagos heat.</p>
+            <p>No warping or cracking in Manila or Lagos extreme heat.</p>
         </div>
     </section>
 
-    <div class="table-container">
-        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem;">Virgin vs Recycled Material</h2>
+    <div class="table-wrap">
+        <h2 style="text-align:center; font-size: 2.5rem; margin-bottom: 50px;">Virgin vs Recycled Comparison</h2>
         <table>
             <thead>
                 <tr>
@@ -68,19 +68,19 @@ html
             </thead>
             <tbody>
                 <tr>
-                    <td><b>Quality</b></td>
+                    <td><b>Quality Level</b></td>
                     <td style="color: #25d366; font-weight: bold;">Premium (Zero Crack)</td>
                     <td>Standard Professional</td>
                 </tr>
                 <tr>
-                    <td><b>Best For</b></td>
-                    <td>Middle East / High-end Projects</td>
-                    <td style="color: #ff5500; font-weight: bold;">Africa / PH Budget Housing</td>
+                    <td><b>Target Market</b></td>
+                    <td>Middle East / Projects</td>
+                    <td style="color: #ff5500; font-weight: bold;">Africa / PH Housing</td>
                 </tr>
                 <tr>
-                    <td><b>Price</b></td>
-                    <td>Value-Oriented</td>
-                    <td style="color: #ff0000; font-weight: bold; font-size: 1.4rem;">Market Bottom Price</td>
+                    <td><b>Price Advantage</b></td>
+                    <td>Value Investment</td>
+                    <td style="color: #f00; font-weight: 900; font-size: 1.3rem;">BEST BUDGET PRICE</td>
                 </tr>
             </tbody>
         </table>
@@ -89,11 +89,11 @@ html
     <footer class="footer">
         <h2 style="color: #fff;">LUCINE FLOOR</h2>
         <p>WhatsApp: +86 15898737651 | Email: liliading123@gmail.com</p>
-        <p style="font-size: 0.8rem; margin-top: 30px;">© 2026 Lucine Floor | Lucinefloor.com | All Rights Reserved.</p>
+        <p style="font-size: 0.9rem; margin-top: 40px;">© 2026 Lucine Floor | Lucinefloor.com | Global Trusted Partner</p>
     </footer>
 
     <a href="https://wa.me" class="whatsapp-float">
-        <img src="https://wikimedia.org" width="35" alt="WhatsApp">
+        <img src="https://wikimedia.org" width="40" alt="WhatsApp">
     </a>
 
 </body>
