@@ -17,11 +17,13 @@
         .card-icon { font-size: 3.5rem; margin-bottom: 15px; }
         .card h3 { font-size: 1.6rem; margin: 0 0 10px; color: #111; text-transform: uppercase; }
 
-        /* 视频板块 - 响应式双列布局 */
+        /* 视频展示板块 - 响应式4网格 */
         .video-section { text-align: center; padding: 60px 10%; background: #fff; }
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 30px; }
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+        .video-item { background: #fdfdfd; border-radius: 12px; overflow: hidden; padding-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; }
         .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .video-caption { margin-top: 12px; font-weight: 600; color: #333; font-size: 1rem; }
 
         .table-wrap { padding: 60px 10%; background: #f8f9fa; }
         table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
@@ -59,30 +61,42 @@
         </div>
     </section>
 
-    <!-- 视频展示板块 -->
+    <!-- 视频展示板块：工厂实力与产品测试 -->
     <section class="video-section">
-        <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #111;">Factory & Product Show</h2>
-        <p style="color: #666; margin-bottom: 40px;">See our manufacturing excellence and quality testing.</p>
+        <h2 style="font-size: 2.2rem; margin-bottom: 10px; color: #111;">Factory Transparency</h2>
+        <p style="color: #666; margin-bottom: 40px;">See how we produce and test our high-quality LVT flooring.</p>
         
         <div class="video-grid">
-            <!-- 视频 1 -->
-            <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/cmKXRVAUVpo?si=w8GWCMpQsY624ugQ" 
-                    title="Lucine Floor Production" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+            <!-- 视频 1: 暴力测试 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://youtube.com" title="Anti-Scratch Test" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">Anti-Scratch & Fire Test</div>
             </div>
             
-            <!-- 视频 2 -->
-            <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/-2WttF2YK8k?si=_jdkdmtscmgYhE1i" 
-                    title="Lucine Floor Quality Test" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+            <!-- 视频 2: 卷曲度测试 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://youtube.com" title="Flexibility Test" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">360° Extreme Flexibility</div>
+            </div>
+
+            <!-- 视频 3: 生产线 (新加) -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/tymqlIsQ0mI?si=uqXD5vtrcIsnUCV1" title="Production Line" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">Automated Production Line</div>
+            </div>
+
+            <!-- 视频 4: 装柜实况 (新加) -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/PEoxJZhwuVE?si=115rPvrH4dIdIXG2" title="Loading Process" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">Massive Loading & Shipping</div>
             </div>
         </div>
     </section>
@@ -123,7 +137,6 @@
         <p style="font-size: 0.8rem; margin-top: 30px;">© 2026 Lucine Floor | Lucinefloor.com</p>
     </footer>
 
-    <!-- 右下角 WhatsApp 浮窗按钮 -->
     <a href="https://wa.me" class="whatsapp-float" target="_blank">
         <img src="https://wikimedia.org" width="35" alt="WhatsApp">
     </a>
